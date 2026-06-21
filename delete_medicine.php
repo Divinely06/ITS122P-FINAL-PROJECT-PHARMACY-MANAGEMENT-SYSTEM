@@ -29,6 +29,6 @@ if (mysqli_query($conn, $sql)) {
     exit();
 } else {
     // may error sa pag-delete
-    die("Hindi ma-delete: " . mysqli_error($conn));
+    die("Unable to delete: " . mysqli_error($conn));
 }
 ?>
