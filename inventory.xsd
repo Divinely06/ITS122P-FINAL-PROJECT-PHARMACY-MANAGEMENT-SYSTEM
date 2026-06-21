@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="PharmacyInventory">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Medicine" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" type="xs:integer"/>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Category" type="xs:string"/>
+                            <xs:element name="Price" type="xs:decimal"/>
+                            <xs:element name="Stock" type="xs:integer"/>
+                            <xs:element name="Unit" type="xs:string"/>
+                            <xs:element name="ExpiryDate" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
