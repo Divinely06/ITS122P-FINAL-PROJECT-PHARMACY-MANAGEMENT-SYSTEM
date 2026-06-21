@@ -29,10 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     if (mysqli_query($conn, $sql)) {
         // balik sa inventory kung successful
-
-        
-        header('Location: inventory.php?added=1');
-        exit();
+        header('Location: inventory.php');
     } else {
         $error_msg = "May error: " . mysqli_error($conn);
     }
