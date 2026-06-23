@@ -1,5 +1,5 @@
 <?php
-// delete_medicine.php - Modern Delete Logic
+// delete_medicine.php - ito 'yung function na magdedelete ng medicine
 
 session_start();
 
