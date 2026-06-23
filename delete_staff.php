@@ -1,5 +1,5 @@
 <?php
-// delete_staff.php - para sa pag-delete ng staff member
+// delete_staff.php - para sa pag-delete ng staff member 
 
 session_start();
 
