@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['med_id'])) {
     try {
         // 1. Set up the connection options matching the server
         $options = array(
-            'location' => 'http://localhost/pharmacy_management/soap_server.php', 
-            'uri'      => 'http://localhost/pharmacy_management/'
+            'location' => 'http://localhost/pharmacy_management-main/soap_server.php', 
+            'uri'      => 'http://localhost/pharmacy_management-main/'
         );
         
         // 2. Initialize the SOAP Client

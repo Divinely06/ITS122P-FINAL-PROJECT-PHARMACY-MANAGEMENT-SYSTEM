@@ -24,7 +24,7 @@ function checkMedicineStock($medicine_id) {
 }
 
 // 1. Initialize the SOAP Server in Non-WSDL mode
-$options = array('uri' => 'http://localhost/pharmacy_management/');
+$options = array('uri' => 'http://localhost/pharmacy_management-main/');
 $server = new SoapServer(NULL, $options);
 
 // 2. Register the specific function so external systems can use it

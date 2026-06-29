@@ -59,7 +59,7 @@ if ($top_products_query) {
     }
 }
 
-// 7. NEW: Fetch Weekly Revenue (Last 7 Days)
+// 7. Fetch Weekly Revenue (Last 7 Days)
 $weekly_labels_map = [];
 $weekly_data_map = [];
 
@@ -175,7 +175,16 @@ $current_time = date('g:i A');
         
         <div class="dash-header">
             <div>
-                <h1>Admin Dashboard</h1>
+                <h1>
+                    <?php 
+                        // Properly check if the user is an admin or counter staff
+                        if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+                            echo 'Admin Dashboard';
+                        } else {
+                            echo 'Counter Staff Dashboard';
+                        }
+                    ?>
+                </h1>
                 <p><?php echo $current_date; ?> · HopeMed Pharmacy</p>
             </div>
             <div class="time-badge">🕒 Last updated: <?php echo $current_time; ?></div>
